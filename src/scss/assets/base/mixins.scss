@@ -1,0 +1,67 @@
+@mixin primary-copy-font {
+  font-family: 'Cuprum', sans-serif;
+}
+
+@mixin secondary-copy-font {
+  font-family: 'PTSans', sans-serif;
+}
+
+@mixin sort-pading-desktop-and-bigger {
+  @media (min-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin services-desktop-and-bigger {
+  @media (min-width: 1185px) {
+    @content;
+  }
+}
+
+@mixin big-desktop-and-bigger {
+  @media (min-width: 1160px) {
+    @content;
+  }
+}
+
+@mixin desktop-and-bigger {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-and-less {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin small-desktop-and-bigger {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet-and-bigger {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin big-tablet-and-bigger {
+  @media (min-width: 825px) {
+    @content;
+  }
+}
+
+@mixin phone-and-bigger {
+  @media (min-width: 544px) {
+    @content;
+  }
+}
+
+@mixin small-phone-and-bigger {
+  @media (min-width: 425px) {
+    @content;
+  }
+}

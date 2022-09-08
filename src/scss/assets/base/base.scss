@@ -1,0 +1,30 @@
+html {
+  @include primary-copy-font;
+  color: $base-text-color;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  height: 100%;
+}
+
+a,
+button {
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1, 875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

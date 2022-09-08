@@ -1,0 +1,22 @@
+.logo {
+  & a {
+    display: flex;
+    justify-content: center;
+    width: 220px;
+    height: 47px;
+    background: $amaranth;
+    border-bottom: 5px solid darken($amaranth, 18%);
+    
+    &:hover,
+    &:active {
+      background: darken($amaranth, 10%);
+      border-bottom: 5px solid darken($amaranth, 33%);
+      opacity: .85;
+    }
+  }
+
+  & img {
+    max-width: none;
+    object-fit: none;
+  }
+}

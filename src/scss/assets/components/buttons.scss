@@ -1,0 +1,26 @@
+.btn {
+  border: 0;
+  outline: 0;
+  background: none;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+
+  &--green {
+    background: $apple;
+
+    &:hover {
+      background: $apple_hover;
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+
+  &--authorization {
+  }
+}
