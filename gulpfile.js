@@ -5,7 +5,7 @@ import autoprefixer from 'gulp-autoprefixer'; // Добовление вендо
 import cheerio from 'gulp-cheerio';
 import cleanCss from 'gulp-clean-css'; // Сжатие CSS файла
 import cssbeautify from 'gulp-cssbeautify';
-// import imagemin from 'gulp-imagemin';
+import imagemin from 'gulp-imagemin';
 import newer from 'gulp-newer'; // Проверка обнавлений
 import notify from 'gulp-notify'; // Сообщения (подсказки)
 import plumber from 'gulp-plumber'; // Обработка ошибок
@@ -38,16 +38,14 @@ const path = {
     html: `${srcFolder}/*.html`,
     scss: `${srcFolder}/scss/style.scss`,
     js: `${srcFolder}/js/app.js`,
-    images: `${srcFolder}/images/**/*.{jpg,png,gif,svg,ico,webp,webmanifest,xml,json}`,
-    svg: `${srcFolder}/images/svg/**/*.svg`,
+    images: `${srcFolder}/images/**/*.{svg,jpg,png,gif,ico,webp,webmanifest,xml,json}`,
     fonts: `${srcFolder}/fonts/**/*.{eot,woff,woff2,ttf,svg}`,
   },
   watch: {
     html: `${srcFolder}/**/*.html`,
     scss: `${srcFolder}/scss/**/*.scss`,
     js: `${srcFolder}/js/**/*.js`,
-    images: `${srcFolder}/images/**/*.{jpg,png,gif,svg,ico,webp,webmanifest,xml,json}`,
-    svg: `${srcFolder}/images/svg/**/*.svg`,
+    images: `${srcFolder}/images/**/*.{svg,jpg,png,gif,ico,webp,webmanifest,xml,json}`,
     fonts: `${srcFolder}/fonts/**/*.{eot,woff,woff2,ttf,svg}`,
   },
   clean: buildFolder,
@@ -167,11 +165,19 @@ const images = () => {
           }),
         ),
       )
+      .pipe(imagemin())
       .pipe(newer(path.build.images))
       // .pipe(webp())
       // .pipe(gulp.dest(path.build.images))
       .pipe(gulp.src(path.src.images))
       .pipe(newer(path.build.images))
+      .pipe(
+        imagemin({
+          progressive: true,
+          interlaced: true,
+          optimizationLevel: 3, // 0 to 7
+        }),
+      )
       .pipe(gulp.dest(path.build.images))
       .pipe(browsersync.stream())
   );
@@ -212,7 +218,7 @@ const svgSpriteBuild = () => {
         },
       }),
     )
-    .pipe(gulp.dest('src/images/'));
+    .pipe(gulp.dest('dist/images/'));
 };
 
 function watcher() {
@@ -227,7 +233,7 @@ const mainTasks = gulp.parallel(html, scss, js, images, fonts);
 const sprite = gulp.series(svgSpriteBuild);
 
 // Построение сценариев выполнение задач
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const dev = gulp.series(reset, sprite, mainTasks, gulp.parallel(watcher, server));
 
 export { sprite };
 

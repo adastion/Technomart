@@ -1,4 +1,7 @@
 .header {
+  background: $aqua_haze;
+  padding-bottom: 3.75rem;
+
   &__top-menu {
     display: flex;
     height: 42px;
@@ -39,29 +42,30 @@
 
     &:active {
       background: darken($pickled_bluewood, 10%);
-      
+
       & .header__icon {
         opacity: 0.3;
       }
     }
   }
-  
+
   &__search-wrap {
     flex-grow: 1;
-    
+
     & svg {
       margin: 0 1rem;
     }
-    
+
     & form {
       display: flex;
       align-items: center;
       height: 100%;
+      width: 100%;
     }
-    
+
     &:focus-within {
       background: $white;
-      
+
       & .header__icon {
         opacity: 1;
         fill: $amaranth;
@@ -85,6 +89,8 @@
   &__search {
     color: $white;
     height: 42px;
+    padding-right: 0.875rem;
+    flex-grow: 1;
 
     &::placeholder {
       color: $white;
@@ -92,29 +98,103 @@
   }
 
   &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    align-self: center;
+    gap: 0.6rem;
+    padding: 0 8rem;
+    margin: 3rem 0;
+
+    & svg {
+      opacity: 0.3;
+    }
   }
 
   &__text {
+    color: $amaranth;
+    font-style: italic;
+    max-width: 16.875em;
+    line-height: 1.4375em;
+    padding-left: 3.5rem;
   }
 
   &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a {
+      font-size: 21px;
+      color: $amaranth;
+      border: 3px solid $white;
+      max-width: 270px;
+      width: 100%;
+      padding: 0.625rem 3rem;
+      margin-bottom: 0.625rem;
+      text-align: center;
+      position: relative;
+    }
+
+    & svg {
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      left: 0.875rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   &__address {
+    color: $pickled_bluewood_text;
+    font-size: 14px;
+    text-align: center;
   }
 
   &__authorization {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem 0.625rem;
+
+    & svg {
+      width: 20px;
+      height: 17px;
+      margin-right: 0.875rem;
+    }
   }
 
   &__menu {
   }
-
+  
   &__list-menu {
+    display: flex;
+    // flex-wrap: wrap;
+    margin: 0 8rem;
   }
-
+  
   &__item-menu {
-  }
+    width: 100%;
+    height: 100%;
+    background-color: $pickled_bluewood;
+    border-bottom: 5px solid darken($pickled_bluewood, 4%);
+    
+    &:hover {
+      background: darken($pickled_bluewood, 4%);
+    }
+    
+    &:active {
+      background: darken($pickled_bluewood, 6%);
+      border-bottom: 5px solid darken($pickled_bluewood, 6%);
 
+      & .header__link {
+        opacity: 0.5;
+      }
+    }
+  }
+  
   &__link {
+    padding: 0 0.5rem;
   }
 }
