@@ -175,7 +175,7 @@ const images = () => {
         imagemin({
           progressive: true,
           interlaced: true,
-          optimizationLevel: 3, // 0 to 7
+          optimizationLevel: 4, // 0 to 7
         }),
       )
       .pipe(gulp.dest(path.build.images))

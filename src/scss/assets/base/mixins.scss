@@ -19,7 +19,7 @@
 }
 
 @mixin big-desktop-and-bigger {
-  @media (min-width: 1160px) {
+  @media (min-width: 1099px) {
     @content;
   }
 }

@@ -36,10 +36,10 @@
         fill: $pickled_bluewood_text;
       }
     }
-    
+
     &:active {
       color: lighten($black, 70%);
-         
+
       & svg {
         opacity: 0.3;
         fill: $black;
