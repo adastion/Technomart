@@ -64,7 +64,8 @@
       margin-right: 0.875rem;
     }
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       background: darken($pickled_bluewood, 5%);
 
       & .header__icon {
@@ -189,6 +190,10 @@
       margin-bottom: 0.625rem;
       text-align: center;
       position: relative;
+
+      &:focus-within {
+        opacity: 0.5;
+      }
     }
 
     & svg {
@@ -248,7 +253,8 @@
     background-color: $pickled_bluewood_text;
     border-bottom: 5px solid darken($pickled_bluewood_text, 8%);
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       background: darken($pickled_bluewood_text, 8%);
     }
 

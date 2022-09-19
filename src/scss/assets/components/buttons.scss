@@ -12,7 +12,8 @@
   &--green {
     background: $apple;
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       background: $apple_hover;
     }
 
@@ -28,7 +29,8 @@
     font-size: 21px;
     padding: 0 1.5rem;
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       color: $amaranth;
 
       & svg {

@@ -8,7 +8,8 @@
     border-bottom: 5px solid darken($amaranth, 18%);
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus-within {
       background: darken($amaranth, 10%);
       border-bottom: 5px solid darken($amaranth, 33%);
       opacity: 0.85;
