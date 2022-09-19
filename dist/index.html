@@ -13,15 +13,15 @@
 <body>
     <div class="container">
         <header><div class="header">
-  <nav class="all-content header__top-menu">
+  <nav class="all-content header__navigation">
     <div class="logo">
       <a href="#">
         <img src="images/logo.png" alt="logo">
       </a>
     </div>
     <ul class="header__list-top-menu">
-      <li class="header__item-top header__search-wrap">
-        <form action="/" method="get">
+      <li class="header__item-top">
+        <form class="header__form" claaction="/" method="get">
           <svg class="header__icon">
             <use xlink:href="images/sprite.svg#icon-search"></use>
           </svg>
@@ -29,27 +29,23 @@
         </form>
       </li>
       <li class="header__item-top">
-        <button class="btn">
-          <svg class="header__icon">
-            <use xlink:href="images/sprite.svg#icon-bookmark"></use>
-          </svg>
-          Закладки: <span>0</span>
-        </button>
+        <svg class="header__icon">
+          <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+        </svg>
+        <button class="btn">Закладки:<span>0</span></button>
       </li>
       <li class="header__item-top">
-        <button class="btn">
-          <svg class="header__icon">
-            <use xlink:href="images/sprite.svg#cart-icon"></use>
-          </svg>
-          Корзина: <span>0</span>
-        </button>
+        <svg class="header__icon">
+          <use xlink:href="images/sprite.svg#cart-icon"></use>
+        </svg>
+        <button class="btn">Корзина:<span>0</span></button>
       </li>
       <li class="header__item-top">
         <button class="btn btn--green">Оформить заказ</button>
       </li>
     </ul>
   </nav>
-  <div class="header__info">
+  <div class="all-content header__info">
     <p class="header__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
     <div class="header__contacts">
       <a href="tel:+78125550555">
@@ -70,7 +66,7 @@
       <a href="#" class="btn btn--authorization">Регистрация</a>
     </div>
   </div>
-  <nav class="header__menu">
+  <nav class="all-content header__menu">
     <ul class="header__list-menu">
       <li class="header__item-menu"><a href="#" class="btn header__link">Главная</a></li>
       <li class="header__item-menu"><a href="#" class="btn header__link">Компания</a></li>
@@ -88,7 +84,7 @@ main
 
 </main>
         <footer><div class="footer">
-  <div class="footer__block">
+  <div class="all-content footer__block">
     <div class="footer__wrap">
       <div class="logo footer__logo">
         <a href="#">
@@ -96,11 +92,11 @@ main
         </a>
       </div>
       <div class="footer__address">
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       </div>
     </div>
     <nav class="footer__navigation">
-      <ul class="footer__list-top">
+      <ul>
         <li class="footer__item-top"><a href="#">Компания</a></li>
         <li class="footer__item-top"><a href="#">Новости</a></li>
         <li class="footer__item-top"><a href="#">Каталог</a></li>
@@ -115,7 +111,7 @@ main
       </ul>
     </nav>
   </div>
-  <div class="footer__block footer__block--down">
+  <div class="all-content footer__block footer__block--down">
     <div class="footer__copyright">
       <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
     </div>

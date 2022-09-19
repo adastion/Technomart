@@ -1,44 +1,67 @@
 .header {
   background: $aqua_haze;
 
-  &__top-menu {
+  &__navigation {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     background: $pickled_bluewood;
     font-size: 17px;
 
-    @include desktop-and-bigger {
-      flex-direction: row;
+    @include small-desktop-and-bigger {
+      flex-wrap: nowrap;
       height: 42px;
+    }
+
+    @include desktop-and-bigger {
+      justify-content: start;
     }
   }
 
   &__list-top-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    display: grid;
+    position: relative;
 
-    @include big-desktop-and-bigger {
-      width: 100%;
+    & svg {
+      position: absolute;
+      left: 0.063rem;
+    }
+
+    @include phone-and-bigger {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet-and-bigger {
+      grid-template-columns: repeat(4, 1fr);
+
+      & svg {
+        position: static;
+      }
+    }
+
+    @include small-desktop-and-bigger {
+      grid-template-columns: 2fr repeat(3, 1fr);
     }
   }
 
   &__item-top {
     display: flex;
-    justify-content: end;
+    align-items: center;
+    width: 100%;
     color: $white;
+    justify-content: center;
 
-    & button {
-      min-width: 150px;
-    }
-
-    &:first-child {
-      justify-content: start;
+    &:last-child {
+      & button {
+        min-width: 150px;
+        width: 100%;
+      }
     }
 
     & span {
       margin-left: 0.2rem;
+      margin-right: 0.875rem;
     }
 
     &:hover {
@@ -58,23 +81,34 @@
     }
   }
 
-  &__search-wrap {
+  &__form {
+    display: flex;
+    position: relative;
+    width: 100%;
 
-    @include tablet-and-bigger {
-    }
-    
     & svg {
-      margin: 0 1rem;
+      position: absolute;
+      top: 50%;
+      left: 0.969rem;
+      transform: translateY(-50%);
+      margin: 0;
     }
-    
-    & form {
-      display: flex;
-      align-items: center;
-      height: 100%;
+
+    & input {
+      color: $white;
       width: 100%;
+      height: 42px;
+      text-align: center;
+      padding: 0 0.875rem;
+
+      &::placeholder {
+        color: $white;
+      }
 
       @include tablet-and-bigger {
-        width: auto;
+        padding-right: 0.875rem;
+        padding-left: 3rem;
+        text-align: start;
       }
     }
 
@@ -99,16 +133,10 @@
     fill: $white;
     opacity: 0.3;
     margin-right: 0.875rem;
-  }
+    margin-left: 0.875rem;
 
-  &__search {
-    color: $white;
-    height: 42px;
-    padding-right: 0.875rem;
-    text-align: center;
-
-    &::placeholder {
-      color: $white;
+    &:not(:first-child) {
+      width: 100%;
     }
   }
 
@@ -118,7 +146,6 @@
     align-items: start;
     align-self: center;
     gap: 2rem;
-    padding: 0 8rem;
     margin: 3rem 0;
 
     @include desktop-and-bigger {
@@ -135,6 +162,11 @@
     color: $amaranth;
     font-style: italic;
     line-height: 1.4375em;
+    text-align: center;
+
+    @include small-desktop-and-bigger {
+      text-align: start;
+    }
 
     @include big-desktop-and-bigger {
       max-width: 16.875em;
@@ -198,15 +230,15 @@
 
   &__list-menu {
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.3rem 0;
-    margin: 0 8rem;
 
-    
+    @include tablet-and-bigger {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     @include small-desktop-and-bigger {
-      grid-template-columns: repeat(7, auto);
+      grid-template-columns: repeat(7, 1fr);
     }
   }
 
@@ -214,7 +246,7 @@
     width: 100%;
     height: 100%;
     background-color: $pickled_bluewood_text;
-    border-bottom: 5px solid darken($pickled_bluewood_text, 4%);
+    border-bottom: 5px solid darken($pickled_bluewood_text, 8%);
 
     &:hover {
       background: darken($pickled_bluewood_text, 8%);
