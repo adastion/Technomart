@@ -12,12 +12,6 @@
   }
 }
 
-@mixin services-desktop-and-bigger {
-  @media (min-width: 1185px) {
-    @content;
-  }
-}
-
 @mixin big-desktop-and-bigger {
   @media (min-width: 1099px) {
     @content;
@@ -26,12 +20,6 @@
 
 @mixin desktop-and-bigger {
   @media (min-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin desktop-and-less {
-  @media (max-width: 1023px) {
     @content;
   }
 }

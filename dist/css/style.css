@@ -258,6 +258,36 @@ h2 {
   opacity: 0.3;
   fill: #000000;
 }
+.btn--banner {
+  width: 135px;
+  height: 38px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.875rem 0.5rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.btn--banner:hover, .btn--banner:focus-within {
+  background: rgba(0, 0, 0, 0.2);
+}
+.btn--banner:active {
+  background: rgba(0, 0, 0, 0.3);
+}
+.btn--red {
+  height: 38px;
+  background: #ee3643;
+  padding: 0.875rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.btn--red:hover, .btn--red:focus-within {
+  background: #b9101c;
+  opacity: 0.9;
+}
+.btn--red:active {
+  background: #a60e19;
+  opacity: 0.9;
+}
 
 input {
   border: none;
@@ -623,6 +653,183 @@ input {
 .logo img {
   -o-object-fit: none;
      object-fit: none;
+}
+
+.banners {
+  margin: 3.75rem 0;
+}
+.banners__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .banners__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.banners__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.875rem 0.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  max-height: 124px;
+}
+@media (min-width: 1024px) {
+  .banners__item {
+    gap: 0.875rem 2.25rem;
+  }
+}
+@media (min-width: 1099px) {
+  .banners__item {
+    gap: 0.875rem 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .banners__item:nth-child(5) {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 1024px) {
+  .banners__item:nth-child(5) {
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+    grid-column: auto/auto;
+  }
+}
+.banners__item--materials {
+  background: #ffbf47;
+}
+.banners__item--tools {
+  background: #3bbce3;
+}
+.banners__item--technic {
+  background: #dc91d8;
+}
+.banners__item--discounts {
+  background: #8ed78f;
+}
+.banners__item--delivery {
+  background: #ffbf47;
+}
+.banners__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.banners__icon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  fill: #ffffff;
+}
+.banners__icon--1 {
+  width: 44px;
+  height: 65px;
+}
+.banners__icon--2 {
+  width: 75px;
+  height: 61px;
+}
+.banners__icon--3 {
+  width: 78px;
+  height: 62px;
+}
+.banners__icon--4 {
+  width: 59px;
+  height: 72px;
+}
+.banners__icon--5 {
+  width: 78px;
+  height: 63px;
+}
+.banners__slider {
+  background: #63a63e;
+  max-height: 266px;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .banners__slider {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 1024px) {
+  .banners__slider {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+.banners__slider svg {
+  width: 22px;
+  fill: #ffffff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+}
+.banners__slider svg:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.banners__slider svg:active {
+  opacity: 0.2;
+}
+.banners__arrow-left {
+  left: 1.5rem;
+}
+.banners__arrow-right {
+  right: 1.5rem;
+}
+.banners__slide {
+  padding: 1.5rem;
+}
+.banners__wrap-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+}
+.banners__title-slide {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.banners__subtitle {
+  font-size: 18px;
 }
 
 .footer {
