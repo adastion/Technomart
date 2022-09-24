@@ -1,0 +1,36 @@
+.products {
+  display: grid;
+  gap: 1.5rem;
+
+  &__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.375rem;
+
+    & li {
+      border: 1px solid $gallery;
+      padding: 1.375rem;
+    }
+  }
+
+  &__card {
+  }
+
+  &__preview {
+    object-fit: none;
+
+    &:hover,
+    &:active {
+      background: $amaranth;
+    }
+  }
+  &__model-name {
+  }
+
+  &_price {
+  }
+
+  &_discounted-price {
+  }
+}

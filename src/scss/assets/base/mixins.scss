@@ -48,6 +48,12 @@
   }
 }
 
+@mixin phone-and-less {
+  @media (max-width: 545px) {
+    @content;
+  }
+}
+
 @mixin small-phone-and-bigger {
   @media (min-width: 425px) {
     @content;
