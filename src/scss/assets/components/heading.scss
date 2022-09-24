@@ -10,6 +10,13 @@
   & a {
     padding: 0.5rem;
   }
+  
+  @include small-phone-and-bigger {
+    & a {
+      padding: 0 1.5rem;
+    }
+
+  }
 
   @include tablet-and-bigger {
     padding: 1.625rem 1.875rem;

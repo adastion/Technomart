@@ -21,22 +21,18 @@
   &__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.875rem 0.25rem;
     gap: 0.875rem 2.25rem;
     align-items: center;
     justify-items: center;
     padding: 1.5rem;
     max-height: 124px;
 
-    &:last-child {
+    &:nth-child(5) {
       @include tablet-and-bigger {
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        grid-column: 1/3;
       }
 
-      @include small-desktop-and-bigger {
-        grid-template-columns: 2fr 1fr;
-        justify-items: start;
+      @include big-desktop-and-bigger {
         grid-column: auto/auto;
       }
     }
