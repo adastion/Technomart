@@ -22,42 +22,41 @@
 
     & li {
       border: 1px solid $gallery;
-    }
-  }
 
-  &__pic {
-    width: 100%;
-
-    & img {
-      aspect-ratio: 1.5/1;
-      object-fit: cover;
+      &:hover,
+      &:focus-within {
+        box-shadow: 0 10px 20px rgba($pickled_bluewood, 0.5);
+      }
     }
   }
 
   &__info {
     padding: 0 1.375rem 1.375rem;
     text-align: center;
+    @include secondary-copy-font;
+    font-size: 17px;
+    font-weight: 600;
+    color: $black;
   }
 
   &__card {
     min-height: 316px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__preview {
     object-fit: none;
-
-    &:hover,
-    &:active {
-      background: $amaranth;
-    }
   }
 
   &__model-name {
+    font-size: 18px;
   }
 
   &_price {
     text-decoration: line-through;
     margin: 0.575rem 0;
+    opacity: 0.4;
 
     & span {
       margin-right: 0.5rem;
@@ -65,10 +64,10 @@
   }
 
   &__discounted-price {
-    margin: 0 auto;
-    margin-left: 10px;
     text-transform: uppercase;
-    clip-path: polygon(75% 0%, 84% 51%, 75% 100%, 0 100%, 0 0);
+    clip-path: polygon(88% 0%, 100% 51%, 88% 100%, 0 100%, 0 0);
+    max-width: 142px;
+    margin: 0 auto;
 
     & span {
       margin-right: 0.5rem;
