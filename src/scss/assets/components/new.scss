@@ -1,0 +1,14 @@
+.new {
+  position: absolute;
+  top: 8px;
+  right: -87px;
+  content: 'new';
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  color: $white;
+  background: $amaranth;
+}
