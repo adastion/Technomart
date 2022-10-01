@@ -1,0 +1,12 @@
+.card {
+  border: 1px solid $gallery;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 10px 20px rgba($pickled_bluewood, 0.5);
+  }
+}

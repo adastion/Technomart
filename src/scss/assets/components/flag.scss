@@ -1,0 +1,21 @@
+.flag {
+  &::before {
+    position: absolute;
+    z-index: 10;
+    top: 8px;
+    right: -35px;
+    content: 'new';
+    width: 118px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    color: $white;
+    background: lighten($amaranth, 3%);
+  }
+
+  & .products__price {
+    opacity: 0;
+  }
+}

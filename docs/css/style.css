@@ -358,12 +358,13 @@ input {
   height: 21px;
 }
 
-.new {
+.flag::before {
   position: absolute;
+  z-index: 10;
   top: 8px;
-  right: -87px;
+  right: -35px;
   content: "new";
-  width: 100%;
+  width: 118px;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,7 +379,24 @@ input {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   color: #ffffff;
-  background: #ee3643;
+  background: #ef4450;
+}
+.flag .products__price {
+  opacity: 0;
+}
+
+.card {
+  border: 1px solid #eaeaea;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover, .card:focus-within {
+  -webkit-box-shadow: 0 10px 20px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 10px 20px rgba(41, 52, 73, 0.5);
 }
 
 .heading {
@@ -818,6 +836,8 @@ input {
   justify-items: center;
   padding: 1.5rem;
   max-height: 124px;
+  position: relative;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .banners__item:nth-child(5) {
@@ -1052,7 +1072,6 @@ input {
 .products__list {
   display: -ms-grid;
   display: grid;
-  justify-items: center;
   gap: 1.375rem;
 }
 @media (min-width: 544px) {
@@ -1080,36 +1099,8 @@ input {
   justify-items: center;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  border: 1px solid #eaeaea;
-  position: relative;
-  overflow: hidden;
-  z-index: 3;
-}
-.products__card--flag::before {
-  position: absolute;
-  top: 8px;
-  right: -87px;
-  content: "new";
-  width: 100%;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  color: #ffffff;
-  background: #ee3643;
 }
 .products__card:hover, .products__card:focus-within {
-  -webkit-box-shadow: 0 10px 20px rgba(41, 52, 73, 0.5);
-          box-shadow: 0 10px 20px rgba(41, 52, 73, 0.5);
   -ms-flex-line-pack: stretch;
       align-content: stretch;
   -webkit-box-align: end;
@@ -1173,6 +1164,46 @@ input {
 }
 .products__discounted-price span {
   margin-right: 0.5rem;
+}
+
+.brands {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.375rem;
+}
+.brands__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.375rem;
+}
+@media (min-width: 544px) {
+  .brands__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .brands__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .brands__list {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.brands__card {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 145px;
+  padding: 0 1.375rem;
 }
 
 .footer {

@@ -26,6 +26,8 @@
     justify-items: center;
     padding: 1.5rem;
     max-height: 124px;
+    position: relative;
+    overflow: hidden;
 
     &:nth-child(5) {
       @include tablet-and-bigger {

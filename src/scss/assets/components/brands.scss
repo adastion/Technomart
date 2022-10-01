@@ -1,0 +1,30 @@
+.brands {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.375rem;
+
+  &__list {
+    display: grid;
+    gap: 1.375rem;
+
+    @include phone-and-bigger {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet-and-bigger {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include small-desktop-and-bigger {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__card {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 145px;
+    padding: 0 1.375rem;
+  }
+}

@@ -5,7 +5,6 @@
 
   &__list {
     display: grid;
-    justify-items: center;
     gap: 1.375rem;
 
     @include phone-and-bigger {
@@ -26,33 +25,9 @@
     display: grid;
     justify-items: center;
     align-content: space-between;
-    border: 1px solid $gallery;
-    position: relative;
-    overflow: hidden;
-    z-index: 3;
-
-    &--flag {
-
-      
-      &::before {
-        position: absolute;
-        top: 8px;
-        right: -87px;
-        content: 'new';
-        width: 100%;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(45deg);
-      color: $white;
-      background: $amaranth;
-    }
-    }
 
     &:hover,
     &:focus-within {
-      box-shadow: 0 10px 20px rgba($pickled_bluewood, 0.5);
       align-content: stretch;
       align-items: end;
 
