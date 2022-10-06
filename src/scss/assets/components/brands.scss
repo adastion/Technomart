@@ -26,5 +26,9 @@
     align-items: center;
     height: 145px;
     padding: 0 1.375rem;
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
