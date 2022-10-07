@@ -12,8 +12,10 @@
 
   &__content {
     display: grid;
+    gap: 2rem;
 
-    @include phone-and-bigger {
+    @include tablet-and-bigger {
+      gap: 0;
     }
 
     & h2 {
@@ -28,48 +30,61 @@
 
   &__block {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding: 1.625rem 0;
-    margin-top: 2rem;
+
+    @include tablet-and-bigger {
+      grid-template-columns: 1fr 3fr;
+      padding: 1.625rem 0;
+      margin-top: 2rem;
+    }
   }
 
   &__navigation {
     font-size: 21px;
     font-weight: 600;
     color: $white;
-    background: $pickled_bluewood_text;
     display: grid;
+    grid-template-rows: repeat(auto-fit, 70px);
     align-items: center;
+    margin-bottom: 2rem;
     position: relative;
 
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: 10;
-      right: -20px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 140%;
-      background: $aqua_haze;
+    @include phone-and-bigger {
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      right: -5px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 3px;
-      height: 125%;
-      border-radius: 50%;
-      background: $white;
-      box-shadow: -1px 0 4px 7px rgba($black, 0.2);
+    @include tablet-and-bigger {
+      grid-template-columns: none;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 140%;
+        background: $aqua_haze;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        right: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 115%;
+        border-radius: 50%;
+        background: $white;
+        box-shadow: 3px 0 4px 10px rgba($black, 0.2);
+      }
     }
 
     & label {
       padding: 1.375rem;
+      background: $pickled_bluewood_text;
       border-top: 1px solid lighten($pickled_bluewood_text, 4%);
       border-bottom: 1px solid darken($pickled_bluewood_text, 6%);
       cursor: pointer;
@@ -83,18 +98,37 @@
   }
 
   &__slides {
-    padding-left: 5rem;
+    @include tablet-and-bigger {
+      padding-left: 5rem;
+    }
   }
 
   &__slide {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
     position: relative;
     display: none;
+
+    @include tablet-and-bigger {
+      grid-template-columns: 1fr 1fr;
+
+      & button {
+        padding: 0.875rem 1.5rem;
+      }
+    }
+
+    @include small-desktop-and-bigger {
+      & button {
+        padding: 0.875rem 3.5rem;
+      }
+    }
   }
 
   &__wrap {
     grid-row: 1/2;
+    position: relative;
+    z-index: 10;
   }
 
   &__title {
@@ -109,9 +143,12 @@
   }
 
   &__pic {
-    position: absolute;
-    top: 34px;
-    right: 0;
+    @include tablet-and-bigger {
+      position: absolute;
+      top: 34px;
+      right: 0;
+      z-index: 9;
+    }
   }
 }
 
