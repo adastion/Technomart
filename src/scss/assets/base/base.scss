@@ -26,6 +26,9 @@ h2 {
   text-transform: uppercase;
   color: $pickled_bluewood_text;
 }
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
 
 .visually-hidden {
   position: absolute;

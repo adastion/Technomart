@@ -65,7 +65,8 @@
   }
 
   &__preview {
-    object-fit: none;
+    object-fit: cover;
+    max-height: 170px;
   }
 
   &__model-name {
