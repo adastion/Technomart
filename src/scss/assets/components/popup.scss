@@ -1,0 +1,32 @@
+.popup {
+  box-shadow: 0 0 15px rgba($black, 0.4);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 21px;
+    height: 3px;
+    background: $amaranth;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 21px;
+    height: 3px;
+    background: $amaranth;
+    transform: rotate(-45deg);
+    cursor: pointer;
+  }
+
+  &--big-shadow {
+    box-shadow: 0 12px 15px 10px rgba($black, 0.4);
+  }
+}

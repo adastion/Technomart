@@ -2,6 +2,7 @@
   display: grid;
   gap: 2rem 6.25rem;
   margin: 5rem 0;
+  position: relative;
 
   @include tablet-and-bigger {
     grid-template-columns: 2fr 1fr;
@@ -49,17 +50,28 @@
   }
 
   &__frame-map {
-    position: relative;
-
-    &::before {
-      content: '';
+    &--active {
       position: absolute;
       top: 0;
+      left: 1.5rem;
+      right: 1.5rem;
       bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
+
+      @include phone-and-bigger {
+        left: 3.75rem;
+        right: 3.75rem;
+      }
+
+      @include desktop-and-bigger {
+        left: 7.5rem;
+        right: 7.5rem;
+      }
+
+      & iframe {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+      }
     }
   }
 

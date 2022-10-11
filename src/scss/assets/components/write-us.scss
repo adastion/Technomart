@@ -1,0 +1,83 @@
+.write-us {
+  background: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 7px solid $amaranth;
+  display: grid;
+  width: 95%;
+
+  @include phone-and-bigger {
+    width: auto;
+  }
+
+  &__wrap {
+    padding: 2.75rem 2.5rem 0;
+
+    @include phone-and-bigger {
+      padding: 2.75rem 5rem 0;
+    }
+  }
+
+  &__form {
+    display: grid;
+    gap: 1.25rem;
+    height: 100%;
+
+    & div:last-child {
+      @include phone-and-bigger {
+        grid-column: 1/3;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__input {
+    border: 2px solid $iron;
+    border-radius: 3px;
+    color: $black;
+    @include secondary-copy-font;
+    font-size: 13px;
+    margin-top: 0.625rem;
+    padding: 0 0.875rem;
+    height: 38px;
+    min-width: 220px;
+    width: 100%;
+
+    &::placeholder {
+      opacity: 0.6;
+      font-size: 13px;
+    }
+
+    &--textarea {
+      padding: 0.875rem;
+      max-width: none;
+      width: 100%;
+      min-height: 110px;
+      resize: none;
+      outline: none;
+      margin-bottom: 2.375rem;
+    }
+  }
+
+  &__wrap-btn {
+    padding: 2.375rem 2.5rem;
+    background: $aqua_haze;
+
+    @include phone-and-bigger {
+      padding: 2.375rem 5rem;
+    }
+  }
+
+  &__btn {
+    width: 95%;
+
+    @include phone-and-bigger {
+      width: 100%;
+    }
+  }
+}
