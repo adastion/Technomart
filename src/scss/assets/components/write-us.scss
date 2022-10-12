@@ -6,7 +6,6 @@
   transform: translateX(-50%);
   border-top: 7px solid $amaranth;
   display: grid;
-  width: 95%;
 
   @include phone-and-bigger {
     width: auto;
