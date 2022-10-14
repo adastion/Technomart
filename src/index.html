@@ -267,10 +267,10 @@ title: Home
     <h2 class="contacts__title">КОНТАКТЫ</h2>
     <p class="contacts__text">Вы можете забрать товар сами,
       заехав в наш офис:</p>
-    <div class="contacts__frame-map">
+    <div class="contacts__frame-map" data-modal="map">
       <img src="/images/map-preview.png" class="contacts__map" alt="map-preview">
     </div>
-    <button class="btn btn--red contacts__btn">Заблудились? НапиШИТЕ НАМ!</button>
+    <button id="bw" class="btn btn--red contacts__btn" data-modal="writeUs">Заблудились? НапиШИТЕ НАМ!</button>
     {{>map}}
   </div>
   {{>write-us}}

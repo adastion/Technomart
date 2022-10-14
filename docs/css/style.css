@@ -1446,6 +1446,9 @@ input {
 .contacts__list-company li:not(:last-child) {
   margin-bottom: 1.5rem;
 }
+.contacts__frame-map {
+  cursor: pointer;
+}
 .contacts__map {
   width: 100%;
   border: none;
@@ -1548,6 +1551,9 @@ input {
   outline: none;
   margin-bottom: 2.375rem;
 }
+.write-us__input:focus {
+  border: 2px solid #ee3643;
+}
 .write-us__wrap-btn {
   padding: 2.375rem 2.5rem;
   background: #f4f7f9;
@@ -1638,7 +1644,8 @@ input {
   height: 100%;
   aspect-ratio: auto;
 }
-.popup--active {
+
+.show {
   display: block;
 }
 

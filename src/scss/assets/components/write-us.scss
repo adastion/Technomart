@@ -61,6 +61,10 @@
       outline: none;
       margin-bottom: 2.375rem;
     }
+
+    &:focus {
+      border: 2px solid $amaranth;
+    }
   }
 
   &__wrap-btn {

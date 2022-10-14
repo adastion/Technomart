@@ -343,17 +343,17 @@
     <h2 class="contacts__title">КОНТАКТЫ</h2>
     <p class="contacts__text">Вы можете забрать товар сами,
       заехав в наш офис:</p>
-    <div class="contacts__frame-map">
+    <div class="contacts__frame-map" data-modal="map">
       <img src="/images/map-preview.png" class="contacts__map" alt="map-preview">
     </div>
-    <button class="btn btn--red contacts__btn">Заблудились? НапиШИТЕ НАМ!</button>
-    <div class="popup popup--map-active">
+    <button id="bw" class="btn btn--red contacts__btn" data-modal="writeUs">Заблудились? НапиШИТЕ НАМ!</button>
+    <div id="map" class="popup popup--map-active">
       <div class="popup__close"></div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569665!2d30.32110961607058!3d59.938455981876096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1665334510745!5m2!1sru!2sby"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>  </div>
-  <div class="popup popup--big-shadow write-us">
+  <div id="writeUs" class="popup popup--big-shadow write-us">
     <div class="popup__close"></div>
     <div class="write-us__wrap">
       <form action="/" class="write-us__form">
