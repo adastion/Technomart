@@ -919,7 +919,7 @@ input {
   height: 63px;
 }
 .banners__slider {
-  height: 268px;
+  max-height: 268px;
   background: #eaeaea;
   -ms-grid-row: 1;
   grid-row: 1/1;
@@ -1024,7 +1024,6 @@ input {
   height: 100%;
 }
 .banners__slide img {
-  max-width: none;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1400,6 +1399,12 @@ input {
 }
 @media (min-width: 768px) {
   .contacts {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .contacts {
     -ms-grid-columns: 2fr 1fr;
     grid-template-columns: 2fr 1fr;
   }
@@ -1430,6 +1435,7 @@ input {
   position: relative;
   font-size: 18px;
   margin-left: 2.25rem;
+  margin-bottom: 1.5rem;
 }
 .contacts__list-company li::before {
   content: "";
@@ -1442,9 +1448,6 @@ input {
   width: 25px;
   height: 2px;
   background-color: #ee3643;
-}
-.contacts__list-company li:not(:last-child) {
-  margin-bottom: 1.5rem;
 }
 .contacts__frame-map {
   cursor: pointer;
@@ -1460,13 +1463,17 @@ input {
   }
 }
 .contacts__btn {
-  margin-top: 2.25rem;
+  margin-top: 1.25rem;
 }
 @media (min-width: 768px) {
   .contacts__btn {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+}
+.contacts__btn--width {
+  padding: 0;
+  width: 100%;
 }
 
 .write-us {
@@ -1490,6 +1497,11 @@ input {
   padding: 2.75rem 2.5rem 0;
 }
 @media (min-width: 544px) {
+  .write-us__wrap {
+    padding: 2.75rem 2rem 0;
+  }
+}
+@media (min-width: 768px) {
   .write-us__wrap {
     padding: 2.75rem 5rem 0;
   }
@@ -1584,7 +1596,6 @@ input {
   right: 10px;
   width: 22px;
   height: 22px;
-  cursor: pointer;
 }
 .popup__close:hover, .popup__close:focus-within {
   -webkit-transform: scale(1.1);

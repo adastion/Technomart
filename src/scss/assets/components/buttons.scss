@@ -67,9 +67,9 @@
       color: $pickled_bluewood_text;
       background: $white;
       border: 3px solid $apple;
-      
+
       &:hover,
-      &:focus-within {       
+      &:focus-within {
         background: none;
         border: 3px solid $pickled_bluewood_text;
       }

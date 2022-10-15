@@ -5,6 +5,10 @@
   position: relative;
 
   @include tablet-and-bigger {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desktop-and-bigger {
     grid-template-columns: 2fr 1fr;
   }
 
@@ -31,6 +35,7 @@
       position: relative;
       font-size: 18px;
       margin-left: 2.25rem;
+      margin-bottom: 1.5rem;
 
       &::before {
         content: '';
@@ -41,10 +46,6 @@
         width: 25px;
         height: 2px;
         background-color: $amaranth;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 1.5rem;
       }
     }
   }
@@ -64,10 +65,15 @@
   }
 
   &__btn {
-    margin-top: 2.25rem;
+    margin-top: 1.25rem;
 
     @include tablet-and-bigger {
       align-self: flex-start;
+    }
+
+    &--width {
+      padding: 0;
+      width: 100%;
     }
   }
 }

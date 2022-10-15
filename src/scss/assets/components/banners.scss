@@ -110,7 +110,7 @@
   }
 
   &__slider {
-    height: 268px;
+    max-height: 268px;
     background: $gallery;
     grid-row: 1 / 1;
     grid-column: 1 / 1;
@@ -193,7 +193,6 @@
     height: 100%;
 
     & img {
-      max-width: none;
       object-fit: cover;
 
       @include tablet-and-bigger {
