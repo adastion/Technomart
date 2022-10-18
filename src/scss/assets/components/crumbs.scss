@@ -1,0 +1,50 @@
+.crumbs {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2.375rem;
+    @include secondary-copy-font;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+
+    & li {
+      position: relative;
+
+      &:not(:last-child) {
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -1.375rem;
+          width: 8px;
+          height: 12px;
+          background: url('../images/svg/icon-right-small.svg') no-repeat;
+        }
+
+        & li .crumbs__link {
+          &:hover,
+          &:focus {
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    color: $black;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  &__icon {
+    width: 14px;
+    height: 12px;
+    opacity: 0.3;
+  }
+}

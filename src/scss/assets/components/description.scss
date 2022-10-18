@@ -1,0 +1,17 @@
+.description {
+  color: $black;
+
+  @include tablet-and-bigger {
+    text-align: start;
+  }
+
+  & h2 {
+    margin-bottom: 2.25rem;
+  }
+
+  &__text {
+    @include secondary-copy-font;
+    font-size: 13px;
+    text-align: start;
+  }
+}
