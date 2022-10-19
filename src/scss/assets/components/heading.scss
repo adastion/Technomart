@@ -10,12 +10,11 @@
   & a {
     padding: 0.5rem;
   }
-  
+
   @include small-phone-and-bigger {
     & a {
       padding: 0 1.5rem;
     }
-
   }
 
   @include tablet-and-bigger {
@@ -30,5 +29,12 @@
 
   &--catalog {
     background: $aqua_haze;
+  }
+
+  &--subtitle {
+    @include secondary-copy-font;
+    font-size: 13px;
+    padding: 0.875rem 1rem;
+    border-radius: 4px;
   }
 }
