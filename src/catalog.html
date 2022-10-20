@@ -21,7 +21,7 @@ title: catalog
     <h2>ПЕРФОРАТОРЫ</h2>
   </div>
 </section>
-<section class="all-content content">
+<section class="all-content content-cotalog">
   <form class="filter">
     <div class="heading heading--subtitle">
       <h3>ФИЛЬТР:</h3>
@@ -29,38 +29,76 @@ title: catalog
     <ul class="filter__list">
       <h4 class="filter__title-parameter">ЦЕНА:</h4>
       <li>
-        <input type="range">
-        <input type="namber" placeholder="0">
-        <input type="namber" placeholder="100">
+        <div class="filter__wrap-range">
+          <input type="range" class="filter__range">
+          <input type="namber" class="filter__input-quantity" placeholder="0">
+          <input type="namber" class="filter__input-quantity" placeholder="100">
+        </div>
       </li>
       <li>
         <h4 class="filter__title-parameter">ПРОИЗВОДИТЕЛИ:</h4>
-        <input id="bosh" type="checkbox" checked>
-        <label for="bosh">BOSCH</label>
-        <input id="interskol" type="checkbox">
-        <label for="interskol">ИНТЕРСКОЛ</label>
-        <input id="makita" type="checkbox" checked>
-        <label for="makita">MAKIta</label>
-        <input id="dewalt" type="checkbox">
-        <label for="dewalt">Dewalt</label>
-        <input id="hitachi" type="checkbox">
-        <label for="hitachi">Hitachi</label>
+        <ul class="filter__sublist">
+          <li class="filter__subitem">
+            <input id="bosh" class="visually-hidden" type="checkbox" checked>
+            <label for="bosh">BOSCH</label>
+          </li>
+          <li class="filter__subitem">
+            <input id="interskol" class="visually-hidden" type="checkbox">
+            <label for="interskol">ИНТЕРСКОЛ</label>
+          </li>
+          <li class="filter__subitem">
+            <input id="makita" class="visually-hidden" type="checkbox" checked>
+            <label for="makita">MAKIta</label>
+          </li>
+          <li class="filter__subitem">
+            <input id="dewalt" class="visually-hidden" type="checkbox">
+            <label for="dewalt">Dewalt</label>
+          </li>
+          <li class="filter__subitem">
+            <input id="hitachi" class="visually-hidden" type="checkbox">
+            <label for="hitachi">Hitachi</label>
+          </li>
+        </ul>
       </li>
       <li>
         <h4 class="filter__title-parameter">ПИТАНИЕ:</h4>
-        <input id="hitachi" type="radio" name="radio-01" checked>
-        <label for="hitachi">Hitachi</label>
-        <input id="hitachi" type="radio" name="radio-01">
-        <label for="hitachi">Hitachi</label>
+        <ul class="filter__sublist">
+          <li class="filter__subitem filter__subitem--radio">
+            <input id="battery" class="visually-hidden" type="radio" name="radio-01" checked>
+            <label for="battery">Аккумуляторные</label>
+          </li>
+          <li class="filter__subitem filter__subitem--radio">
+            <input id="mainsPower" class="visually-hidden" type="radio" name="radio-01">
+            <label for="mainsPower">Сетевые</label>
+          </li>
+        </ul>
       </li>
     </ul>
-    <button class="btn">ПОКАЗАТЬ</button>
+    <button class="btn btn--transparent filter__btn">ПОКАЗАТЬ</button>
   </form>
   <section class="sort">
     <div class="heading heading--subtitle">
       <h3>СОРТИРОВКА:</h3>
     </div>
-
+    <ul class="sort__list">
+      <li class="sort__item">
+        <button class="btn sort__btn">ПО ЦЕНЕ</button>
+      </li>
+      <li class="sort__item">
+        <button class="btn sort__btn">ПО ТИПУ</button>
+      </li>
+      <li class="sort__item">
+        <button class="btn sort__btn">ПО ФУНКЦИОНАЛУ</button>
+      </li>
+    </ul>
+    <div class="sort__icon-wrap">
+      <svg class="sort__icon">
+        <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+      </svg>
+      <svg class="sort__icon">
+        <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+      </svg>
+    </div>
   </section>
   <div class="products">
 

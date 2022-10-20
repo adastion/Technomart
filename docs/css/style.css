@@ -337,6 +337,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #a60e19;
   opacity: 0.9;
 }
+.btn--transparent {
+  color: #000000;
+  font-size: 13px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  padding: 0.75rem 2.375rem;
+}
 
 input {
   border: none;
@@ -1718,6 +1725,78 @@ input {
   font-family: "PTSans", sans-serif;
   font-size: 13px;
   text-align: start;
+}
+
+.content-cotalog {
+  margin: 1.375rem 0;
+}
+
+.filter {
+  font-family: "PTSans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.filter__list {
+  display: -ms-grid;
+  display: grid;
+}
+.filter__list > li {
+  font-size: 15px;
+  padding: 1.25rem 0;
+}
+.filter__list > li:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+}
+.filter__wrap-range {
+  display: -ms-grid;
+  display: grid;
+}
+.filter__input-quantity {
+  color: #000000;
+  background: #f9f5f0;
+  border-radius: 3px;
+}
+.filter__sublist {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem 0;
+}
+.filter__subitem {
+  padding-left: 35px;
+  position: relative;
+}
+.filter__subitem label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 27px;
+  height: 23px;
+  opacity: 0.3;
+  background: url("../images/svg/checkbox-off.svg") no-repeat;
+  cursor: pointer;
+}
+.filter__subitem input:checked + label::before {
+  background: url("../images/svg/checkbox-on.svg") no-repeat;
+}
+.filter__subitem--radio label::before {
+  width: 25px;
+  height: 25px;
+  background: url("../images/svg/radio-off.svg") no-repeat;
+}
+.filter__subitem--radio input:checked + label::before {
+  background: url("../images/svg/radio-on.svg") no-repeat;
+}
+.filter__title-parameter {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.filter__btn {
+  width: 100%;
 }
 
 .footer {
