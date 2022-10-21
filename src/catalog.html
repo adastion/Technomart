@@ -32,6 +32,7 @@ title: catalog
         <div class="filter__wrap-range">
           <input type="range" class="filter__range">
           <input type="namber" class="filter__input-quantity" placeholder="0">
+          <span>-</span>
           <input type="namber" class="filter__input-quantity" placeholder="100">
         </div>
       </li>
@@ -76,29 +77,40 @@ title: catalog
     </ul>
     <button class="btn btn--transparent filter__btn">ПОКАЗАТЬ</button>
   </form>
-  <section class="sort">
-    <div class="heading heading--subtitle">
-      <h3>СОРТИРОВКА:</h3>
-    </div>
+  <section class="heading heading--subtitle sort">
+    <h3>СОРТИРОВКА:</h3>
     <ul class="sort__list">
-      <li class="sort__item">
-        <button class="btn sort__btn">ПО ЦЕНЕ</button>
+      <input id="price" type="radio" class="visually-hidden" name="sort" checked>
+      <input id="type" type="radio" class="visually-hidden" name="sort">
+      <input id="functional" type="radio" class="visually-hidden" name="sort">
+      <li>
+        <label for="price" class="btn sort__btn">ПО ЦЕНЕ</label>
       </li>
-      <li class="sort__item">
-        <button class="btn sort__btn">ПО ТИПУ</button>
+      <li>
+        <label for="type" class="btn sort__btn">ПО ТИПУ</label>
       </li>
-      <li class="sort__item">
-        <button class="btn sort__btn">ПО ФУНКЦИОНАЛУ</button>
+      <li>
+        <label for="functional" class="btn sort__btn">ПО ФУНКЦИОНАЛУ</label>
       </li>
     </ul>
-    <div class="sort__icon-wrap">
-      <svg class="sort__icon">
-        <use xlink:href="images/sprite.svg#icon-up-dir"></use>
-      </svg>
-      <svg class="sort__icon">
-        <use xlink:href="images/sprite.svg#icon-up-dir"></use>
-      </svg>
-    </div>
+    <ul class="sort__icon-wrap">
+      <li>
+        <input id="up" class="sort__input visually-hidden" type="radio" name="less-more" checked>
+        <label for="up">
+          <svg class="sort__icon">
+            <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+          </svg>
+        </label>
+      </li>
+      <li>
+        <input id="down" class="sort__input visually-hidden" type="radio" name="less-more">
+        <label for="down">
+          <svg class="sort__icon">
+            <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+          </svg>
+        </label>
+      </li>
+    </ul>
   </section>
   <div class="products">
 

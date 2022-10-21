@@ -1,0 +1,72 @@
+.sort {
+  display: grid;
+
+  @include tablet-and-bigger {
+    grid-template-columns: 2fr 2fr 0.5fr;
+  }
+
+  & h3 {
+    text-align: left;
+  }
+
+  &__list {
+    @include secondary-copy-font;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    grid-column: 1/3;
+
+    @include tablet-and-bigger {
+      grid-column: auto;
+    }
+  }
+
+  &__btn {
+    color: $black;
+    opacity: 0.3;
+    border-bottom: 1px dotted $amaranth;
+    height: auto;
+    transition: all 0.3s;
+  }
+
+  &__icon-wrap {
+    display: flex;
+    gap: 0 0.8rem;
+    justify-content: flex-end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    @include tablet-and-bigger {
+      grid-row: auto;
+      grid-column: auto;
+    }
+
+    & li {
+      &:last-child {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__icon {
+    width: 11px;
+    height: 10px;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__input:checked + label .sort__icon {
+    fill: $amaranth;
+    opacity: 1;
+  }
+}
+
+#price:checked ~ li label[for='price'],
+#type:checked ~ li label[for='type'],
+#functional:checked ~ li label[for='functional'] {
+  color: $amaranth;
+  opacity: 1;
+  border: none;
+}
