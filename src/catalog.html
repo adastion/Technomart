@@ -22,10 +22,45 @@ title: catalog
   </div>
 </section>
 <section class="all-content content-cotalog">
+  <div class="heading heading--subtitle">
+    <h3>ФИЛЬТР:</h3>
+  </div>
+  <section class="heading heading--subtitle sort">
+    <h3>СОРТИРОВКА:</h3>
+    <ul class="sort__list">
+      <input id="price" type="radio" class="visually-hidden" name="sort" checked>
+      <li>
+        <label for="price" class="btn sort__btn">ПО ЦЕНЕ</label>
+      </li>
+      <input id="type" type="radio" class="visually-hidden" name="sort">
+      <li>
+        <label for="type" class="btn sort__btn">ПО ТИПУ</label>
+      </li>
+      <input id="functional" type="radio" class="visually-hidden" name="sort">
+      <li>
+        <label for="functional" class="btn sort__btn">ПО ФУНКЦИОНАЛУ</label>
+      </li>
+    </ul>
+    <ul class="sort__icon-wrap">
+      <li>
+        <input id="up" class="sort__input visually-hidden" type="radio" name="less-more" checked>
+        <label for="up">
+          <svg class="sort__icon">
+            <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+          </svg>
+        </label>
+      </li>
+      <li>
+        <input id="down" class="sort__input visually-hidden" type="radio" name="less-more">
+        <label for="down">
+          <svg class="sort__icon">
+            <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+          </svg>
+        </label>
+      </li>
+    </ul>
+  </section>
   <form class="filter">
-    <div class="heading heading--subtitle">
-      <h3>ФИЛЬТР:</h3>
-    </div>
     <ul class="filter__list">
       <h4 class="filter__title-parameter">ЦЕНА:</h4>
       <li>
@@ -48,11 +83,11 @@ title: catalog
             <label for="interskol">ИНТЕРСКОЛ</label>
           </li>
           <li class="filter__subitem">
-            <input id="makita" class="visually-hidden" type="checkbox" checked>
+            <input id="makita" class="visually-hidden" type="checkbox" checked disabled>
             <label for="makita">MAKIta</label>
           </li>
           <li class="filter__subitem">
-            <input id="dewalt" class="visually-hidden" type="checkbox">
+            <input id="dewalt" class="visually-hidden" type="checkbox" disabled>
             <label for="dewalt">Dewalt</label>
           </li>
           <li class="filter__subitem">
@@ -77,43 +112,170 @@ title: catalog
     </ul>
     <button class="btn btn--transparent filter__btn">ПОКАЗАТЬ</button>
   </form>
-  <section class="heading heading--subtitle sort">
-    <h3>СОРТИРОВКА:</h3>
-    <ul class="sort__list">
-      <input id="price" type="radio" class="visually-hidden" name="sort" checked>
-      <input id="type" type="radio" class="visually-hidden" name="sort">
-      <input id="functional" type="radio" class="visually-hidden" name="sort">
-      <li>
-        <label for="price" class="btn sort__btn">ПО ЦЕНЕ</label>
+  <div class="products products--cotalog">
+    <ul class="products__list">
+      <li class="card products__card">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_01.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 9000</h3>
+          <p class="products__price"><span>32500</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>25500</span> Р.</p>
+        </div>
       </li>
-      <li>
-        <label for="type" class="btn sort__btn">ПО ТИПУ</label>
+      <li class="card products__card">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_02.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 9000</h3>
+          <p class="products__price"><span>22500</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>15500</span> Р.</p>
+        </div>
       </li>
-      <li>
-        <label for="functional" class="btn sort__btn">ПО ФУНКЦИОНАЛУ</label>
+      <li class="card products__card">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_03.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 6000</h3>
+          <p class="products__price"><span>32500</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>25500</span> Р.</p>
+        </div>
+      </li>
+      <li class="card products__card flag">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_04.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 2000</h3>
+          <p class="products__price"><span>20000</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>12500</span> Р.</p>
+        </div>
+      </li>
+      <li class="card products__card">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_03.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 6000</h3>
+          <p class="products__price"><span>32500</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>25500</span> Р.</p>
+        </div>
+      </li>
+      <li class="card products__card flag">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_04.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 2000</h3>
+          <p class="products__price"><span>20000</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>12500</span> Р.</p>
+        </div>
+      </li>
+      <li class="card products__card">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_03.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 6000</h3>
+          <p class="products__price"><span>32500</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>25500</span> Р.</p>
+        </div>
+      </li>
+      <li class="card products__card">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_03.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 6000</h3>
+          <p class="products__price"><span>32500</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>25500</span> Р.</p>
+        </div>
+      </li>
+      <li class="card products__card flag">
+        <div class="products__buttons">
+          <a href="#" class="btn btn__green btn__green--card">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart-icon"></use>
+            </svg>
+            КУПИТЬ
+          </a>
+          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+        </div>
+        <img src="images/Perforator_04.png" alt="preview" class="products__preview">
+        <div class="products__info">
+          <h3 class="products__model-name">Перфоратор BOSCH BFG 2000</h3>
+          <p class="products__price"><span>20000</span> Р.</p>
+          <p class="btn btn--red products__discounted-price"><span>12500</span> Р.</p>
+        </div>
       </li>
     </ul>
-    <ul class="sort__icon-wrap">
-      <li>
-        <input id="up" class="sort__input visually-hidden" type="radio" name="less-more" checked>
-        <label for="up">
-          <svg class="sort__icon">
-            <use xlink:href="images/sprite.svg#icon-up-dir"></use>
-          </svg>
-        </label>
-      </li>
-      <li>
-        <input id="down" class="sort__input visually-hidden" type="radio" name="less-more">
-        <label for="down">
-          <svg class="sort__icon">
-            <use xlink:href="images/sprite.svg#icon-up-dir"></use>
-          </svg>
-        </label>
-      </li>
-    </ul>
-  </section>
-  <div class="products">
-
+    <nav class="pages-nav">
+      <ul class="pages-nav__list">
+        <li><a href="#" class="btn btn__active btn--transparent pages-nav__btn">1</a></li>
+        <li><a href="#" class="btn btn--transparent pages-nav__btn">2</a></li>
+        <li><a href="#" class="btn btn--transparent pages-nav__btn">3</a></li>
+        <li><a href="#" class="btn btn--transparent">СЛЕДУЮЩАЯ</a></li>
+      </ul>
+    </nav>
   </div>
 </section>
 <section class="heading heading--catalog description">

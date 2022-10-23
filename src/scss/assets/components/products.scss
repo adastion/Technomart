@@ -3,6 +3,22 @@
   gap: 1.5rem;
   margin-bottom: 1.375rem;
 
+  &--cotalog {
+    & ul {
+      @include phone-and-bigger {
+        grid-template-columns: auto;
+      }
+
+      @include tablet-and-bigger {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include big-desktop-and-bigger {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
   &__list {
     display: grid;
     gap: 1.375rem;

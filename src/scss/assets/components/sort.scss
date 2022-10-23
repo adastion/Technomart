@@ -2,7 +2,7 @@
   display: grid;
 
   @include tablet-and-bigger {
-    grid-template-columns: 2fr 2fr 0.5fr;
+    grid-template-columns: 1fr 2fr 0.5fr;
   }
 
   & h3 {
@@ -20,14 +20,27 @@
     @include tablet-and-bigger {
       grid-column: auto;
     }
+
+    & li {
+      border-bottom: 1px dotted $amaranth;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 1;
+        border-bottom: 1px solid $amaranth;
+      }
+    }
   }
 
   &__btn {
     color: $black;
     opacity: 0.3;
-    border-bottom: 1px dotted $amaranth;
     height: auto;
     transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__icon-wrap {
@@ -55,6 +68,10 @@
     opacity: 0.3;
     cursor: pointer;
     transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__input:checked + label .sort__icon {
@@ -68,5 +85,10 @@
 #functional:checked ~ li label[for='functional'] {
   color: $amaranth;
   opacity: 1;
+}
+
+#price:checked + li,
+#type:checked + li,
+#functional:checked + li {
   border: none;
 }

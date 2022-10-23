@@ -147,9 +147,32 @@
 
   &--transparent {
     color: $black;
+    @include secondary-copy-font;
     font-size: 13px;
     border: 1px solid $gallery;
     border-radius: 3px;
     padding: 0.75rem 2.375rem;
+
+    &:hover,
+    &:focus-within {
+      border: 1px solid $pale_sky;
+    }
+
+    &:active {
+      border: 1px solid $amaranth;
+    }
+  }
+  
+  &__active {
+    color: $white;
+    background-color: $amaranth;
+    border: none;
+    cursor: default;
+
+    &:hover,
+    &:focus-within,
+    &:active {
+      border: none;
+    }
   }
 }

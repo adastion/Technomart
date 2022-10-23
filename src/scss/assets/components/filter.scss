@@ -2,6 +2,10 @@
   @include secondary-copy-font;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  grid-row: 2/3;
+
+  @include tablet-and-bigger {
+  }
 
   &__list {
     display: grid;
@@ -19,11 +23,11 @@
   &__wrap-range {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   &__range {
-    grid-column: 1/4;
+    grid-column: 1/3;
   }
 
   &__input-quantity {
@@ -34,7 +38,6 @@
 
   &__sublist {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 30%);
     gap: 1.5rem;
   }
 
@@ -59,12 +62,12 @@
       opacity: 0.4;
     }
 
-    & label:active:before {
-      opacity: 0.1;
-    }
-
     & input:checked + label::before {
       background: url('../images/svg/checkbox-on.svg') no-repeat;
+    }
+
+    & input:disabled + label::before {
+      opacity: 0.1;
     }
 
     &--radio {
@@ -88,5 +91,10 @@
 
   &__btn {
     width: 100%;
+
+    @include tablet-and-bigger {
+      margin: 2rem 0;
+      width: auto;
+    }
   }
 }
