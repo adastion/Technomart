@@ -20,11 +20,17 @@
         </svg>
         <button class="btn">Закладки:<span>0</span></button>
       </li>
-      <li class="header__item-top">
+      <!-- <li class="header__item-top">
         <svg class="header__icon">
           <use xlink:href="images/sprite.svg#cart-icon"></use>
         </svg>
         <button class="btn">Корзина:<span>0</span></button>
+      </li> -->
+      <li class="header__item-top header__item-top--full">
+        <svg class="header__icon">
+          <use xlink:href="images/sprite.svg#cart-icon"></use>
+        </svg>
+        <button class="btn">Корзина:<span>10</span></button>
       </li>
       <li class="header__item-top">
         <button class="btn btn__green--menu">Оформить заказ</button>
@@ -42,14 +48,27 @@
       </a>
       <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
-    <div class="header__authorization">
-      <button href="#" class="btn btn--authorization">
+    <div class="header__authorization header__authorization--user">
+      <button class="btn btn--authorization header__user-active">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-user"></use>
+        </svg>
+        <span>Андрей Лосиков</span>
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-login"></use>
+        </svg>
+      </button>
+      <div class="header__wrap-links">
+        <a href="#" class="header__link-office">Мои заказы</a>
+        <a href="#" class="header__link-office">Личный кабинет</a>
+      </div>
+      <!-- <button href="#" class="btn btn--authorization">
         <svg>
           <use xlink:href="images/sprite.svg#icon-login"></use>
         </svg>
         Войти
       </button>
-      <a href="#" class="btn btn--authorization">Регистрация</a>
+      <a href="#" class="btn btn--authorization">Регистрация</a> -->
     </div>
   </div>
   <nav class="all-content header__menu">
