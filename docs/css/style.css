@@ -199,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .all-content {
@@ -769,6 +770,9 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.header__authorization--hidden {
+  display: none;
 }
 .header__user-active {
   -webkit-box-pack: justify;
@@ -1701,6 +1705,7 @@ input {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   position: relative;
+  z-index: 30;
   display: none;
 }
 .popup__close {

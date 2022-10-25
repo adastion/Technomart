@@ -1,6 +1,7 @@
 .popup {
   box-shadow: 0 0 15px rgba($black, 0.4);
   position: relative;
+  z-index: 30;
   display: none;
 
   &__close {
