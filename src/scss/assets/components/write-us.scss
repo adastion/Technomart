@@ -72,12 +72,7 @@
   }
 
   &__wrap-btn {
-    padding: 2.375rem 2.5rem;
-    background: $aqua_haze;
-
-    @include phone-and-bigger {
-      padding: 2.375rem 5rem;
-    }
+ 
   }
 
   &__btn {

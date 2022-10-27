@@ -81,6 +81,44 @@
     }
   }
 
+  &__red {
+    height: 38px;
+    background: $amaranth;
+    padding: 0.875rem 2.5rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 3px;
+
+    &:hover,
+    &:focus-within {
+      background: darken($amaranth, 18%);
+      opacity: 0.9;
+    }
+
+    &:active {
+      background: darken($amaranth, 22%);
+      opacity: 0.9;
+    }
+
+    &--white {
+      background: $white;
+      color: $black;
+
+      &:hover,
+      &:focus-within {
+        background: darken($white, 18%);
+        opacity: 0.9;
+        color: $white;
+      }
+
+      &:active {
+        background: darken($white, 22%);
+        opacity: 0.9;
+        color: $white;
+      }
+    }
+  }
+
   &--authorization {
     background: $white;
     color: $black;
@@ -125,26 +163,6 @@
     }
   }
 
-  &--red {
-    height: 38px;
-    background: $amaranth;
-    padding: 0.875rem 2.5rem;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-radius: 3px;
-
-    &:hover,
-    &:focus-within {
-      background: darken($amaranth, 18%);
-      opacity: 0.9;
-    }
-
-    &:active {
-      background: darken($amaranth, 22%);
-      opacity: 0.9;
-    }
-  }
-
   &--transparent {
     color: $black;
     @include secondary-copy-font;
@@ -163,7 +181,7 @@
       border: 1px solid $amaranth;
     }
   }
-  
+
   &__active {
     color: $white;
     background-color: $amaranth;

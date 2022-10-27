@@ -1,9 +1,10 @@
 const btnModal = document.querySelectorAll('[data-modal]');
-const closeModal = document.querySelectorAll('.popup__close');
-const modal = document.querySelectorAll('.popup');
+const closeModal = document.querySelectorAll('.modal__close');
+const modal = document.querySelectorAll('.modal');
 
 btnModal.forEach((item) => {
   item.addEventListener('click', (event) => {
+    event.preventDefault();
     let $this = event.currentTarget;
     let modalId = $this.getAttribute('data-modal');
     let modalWin = document.getElementById(modalId);
@@ -18,7 +19,7 @@ function closeMo(currentModal) {
 
 closeModal.forEach((item) => {
   item.addEventListener('click', (event) => {
-    let currentModal = event.currentTarget.closest('.popup');
+    let currentModal = event.currentTarget.closest('.modal');
     closeMo(currentModal);
   });
 });
