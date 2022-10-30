@@ -11,7 +11,7 @@
     <title>Catalog</title></head>
 
 <body>
-    <div id="addProduct" class="modal ">
+    <div id="addProduct" class="modal">
       <div class="modal__content adding-product">
         <button class="btn modal__close"></button>
         <div class="adding-product__title">
@@ -30,6 +30,37 @@
           <button class="btn btn__red">ОФОРМИТЬ ЗАКАЗ</button>
           <button class="btn btn__red btn__red--white">ПРОДОЛЖИТЬ ПОКУПКИ</button>
         </div>
+      </div>
+    </div>    <div id="writeUs" class="modal">
+      <div class="modal__content">
+        <button class="btn modal__close"></button>
+        <div class="write-us__wrap">
+          <form action="/" class="write-us__form">
+            <div>
+              <label for="yourName" class="write-us__title">Ваше имя:</label>
+              <input id="yourName" type="text" class="write-us__input" placeholder="Имя Фамилия">
+            </div>
+            <div>
+              <label for="yourEmail" class="write-us__title">Ваш e-mail:</label>
+              <input id="yourEmail" type="email" class="write-us__input" placeholder="email@example.com">
+            </div>
+            <div>
+              <label for="yourMessage" class="write-us__title">Текст письма:</label>
+              <textarea id="yourMessage" class="write-us__input write-us__input--textarea"
+                placeholder="В свободной форме"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal__wrap-btn">
+          <button class="btn btn__red write-us__btn">ОТПРАВИТЬ</button>
+        </div>
+      </div>
+    </div>    <div id="map" class="modal">
+      <div class="modal__content modal__content--map">
+        <button class="btn modal__close"></button>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569665!2d30.32110961607058!3d59.938455981876096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1665334510745!5m2!1sru!2sby"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>    <div class="container">
         <header><div class="header">
@@ -175,10 +206,14 @@
       <h4 class="filter__title-parameter">ЦЕНА:</h4>
       <li>
         <div class="filter__wrap-range">
-          <input type="range" class="filter__range">
-          <input type="namber" class="filter__input-quantity" placeholder="0">
-          <span>-</span>
-          <input type="namber" class="filter__input-quantity" placeholder="100">
+          <div class="filter__range">
+            <div id="range-slider"></div>
+          </div>
+          <div class="filter__inputs">
+            <input id="input01" type="number" class="filter__input-quantity">
+            <span>-</span>
+            <input id="input02" type="number" class="filter__input-quantity">
+          </div>
         </div>
       </li>
       <li>

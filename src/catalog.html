@@ -68,10 +68,14 @@ hidden: header__authorization--hidden
       <h4 class="filter__title-parameter">ЦЕНА:</h4>
       <li>
         <div class="filter__wrap-range">
-          <input type="range" class="filter__range">
-          <input type="namber" class="filter__input-quantity" placeholder="0">
-          <span>-</span>
-          <input type="namber" class="filter__input-quantity" placeholder="100">
+          <div class="filter__range">
+            <div id="range-slider"></div>
+          </div>
+          <div class="filter__inputs">
+            <input id="input01" type="number" class="filter__input-quantity">
+            <span>-</span>
+            <input id="input02" type="number" class="filter__input-quantity">
+          </div>
         </div>
       </li>
       <li>
