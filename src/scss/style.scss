@@ -4,6 +4,8 @@
 @import 'assets/base/mixins';
 @import 'assets/base/base';
 
+@import '../libs/nouislider/nouislider.min';
+
 @import 'assets/components/container';
 @import 'assets/components/all-content';
 @import 'assets/components/buttons';
@@ -24,10 +26,10 @@
 @import 'assets/components/description';
 @import 'assets/components/content-cotalog';
 @import 'assets/components/filter';
+@import 'assets/components/range-slider';
 @import 'assets/components/sort';
 @import 'assets/components/pages-nav';
 @import 'assets/components/modal';
 @import 'assets/components/adding-product';
 @import 'assets/components/show';
 @import 'assets/components/footer';
-@import 'assets/components/nouislider';

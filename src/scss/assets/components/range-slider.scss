@@ -1,0 +1,41 @@
+.noUi-connect {
+  background: $abbey;
+}
+
+.noUi-target {
+  height: 3px;
+  border: none;
+  background: $iron;
+}
+
+.noUi-handle {
+  box-shadow: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 1px 2px 0px rgba($black, 0.2);
+  cursor: pointer;
+  background: url('../images/svg/filter-button.svg') no-repeat;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 20px;
+  height: 20px;
+  top: -9px;
+  right: -8.5px;
+  border-radius: 50%;
+
+  &:focus-visible {
+    transform: scale(1.1);
+  }
+}

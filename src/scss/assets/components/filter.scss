@@ -23,7 +23,7 @@
   &__wrap-range {
     display: grid;
     gap: 0.5rem;
-    
+
     @include tablet-and-bigger {
     }
   }
@@ -31,7 +31,7 @@
   &__range {
     background: $merino;
     border-radius: 3px;
-    padding: 0.6rem 0.25rem;
+    padding: 1.875rem 1.25rem;
   }
 
   &__inputs {
