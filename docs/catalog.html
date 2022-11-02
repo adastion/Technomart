@@ -14,9 +14,8 @@
       <div class="modal__content adding-product">
         <button class="btn modal__close"></button>
         <div class="adding-product__title">
-          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="66px" height="66px" viewBox="0 0 66 66" enable-background="new 0 0 66 66"
-            xml:space="preserve">
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="66px" height="66px" viewBox="0 0 66 66" enable-background="new 0 0 66 66" xml:space="preserve">
             <circle fill="#63A63E" cx="33" cy="33" r="33" />
             <path fill="#FFFFFF" d="M49.641,21.066c-0.389-0.389-1.025-0.389-1.414,0L29.788,39.504c-0.389,0.389-1.025,0.389-1.414,0
         	l-8.14-8.139c-0.389-0.389-1.025-0.389-1.414,0L15.285,34.9c-0.389,0.389-0.389,1.025,0,1.414l13.089,13.09
@@ -82,7 +81,7 @@
         <svg class="header__icon">
           <use xlink:href="images/sprite.svg#icon-bookmark"></use>
         </svg>
-        <button class="btn">Закладки:<span>0</span></button>
+        <button class="btn">Закладки:<span id="bookmarksBtn">0</span></button>
       </li>
       <li class="header__item-top header__item-top--full">
         <svg class="header__icon">
@@ -266,7 +265,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_01.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -283,7 +282,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_02.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -300,7 +299,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_03.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -317,7 +316,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_04.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -334,7 +333,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_03.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -351,7 +350,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_04.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -368,7 +367,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_03.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -385,7 +384,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_03.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -402,7 +401,7 @@
             </svg>
             КУПИТЬ
           </a>
-          <a href="#" class="btn btn__green btn__green--not-bg">В закладки</a>
+          <a href="#" class="btn btn__green btn__green--not-bg" data-bookmarks="bookmarksBtn">В закладки</a>
         </div>
         <img src="images/Perforator_04.png" alt="preview" class="products__preview">
         <div class="products__info">
@@ -434,8 +433,7 @@
       дрель.</p>
   </div>
 </section>
-
-        </main>
+</main>
         <footer><div class="footer">
   <div class="all-content footer__block">
     <div class="footer__wrap">

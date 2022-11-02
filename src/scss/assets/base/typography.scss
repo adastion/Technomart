@@ -5,10 +5,10 @@
 
   src: url('../fonts/cuprum/Cuprum-Regular.woff2') format('woff2');
   src: url('../fonts/cuprum/Cuprum-Regular.eot') format('embedded-opentype'),
-       url('../fonts/cuprum/Cuprum-Regular.otf') format('otf'),
-       url('../fonts/cuprum/Cuprum-Regular.svg') format('svg'),
-       url('../fonts/cuprum/Cuprum-Regular.ttf') format('truetype'),
-       url('../fonts/cuprum/Cuprum-Regular.woff') format('woff');
+    url('../fonts/cuprum/Cuprum-Regular.otf') format('otf'),
+    url('../fonts/cuprum/Cuprum-Regular.svg') format('svg'),
+    url('../fonts/cuprum/Cuprum-Regular.ttf') format('truetype'),
+    url('../fonts/cuprum/Cuprum-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -18,10 +18,10 @@
 
   src: url('../fonts/cuprum/Cuprum-Bold.woff2') format('woff2');
   src: url('../fonts/cuprum/Cuprum-Bold.eot') format('embedded-opentype'),
-       url('../fonts/cuprum/Cuprum-Bold.otf') format('otf'),
-       url('../fonts/cuprum/Cuprum-Bold.svg') format('svg'),
-       url('../fonts/cuprum/Cuprum-Bold.ttf') format('truetype'),
-       url('../fonts/cuprum/Cuprum-Bold.woff') format('woff');
+    url('../fonts/cuprum/Cuprum-Bold.otf') format('otf'),
+    url('../fonts/cuprum/Cuprum-Bold.svg') format('svg'),
+    url('../fonts/cuprum/Cuprum-Bold.ttf') format('truetype'),
+    url('../fonts/cuprum/Cuprum-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -31,10 +31,10 @@
 
   src: url('../fonts/cuprum/Cuprum-Italic.woff2') format('woff2');
   src: url('../fonts/cuprum/Cuprum-Italic.eot') format('embedded-opentype'),
-       url('../fonts/cuprum/Cuprum-Italic.otf') format('otf'),
-       url('../fonts/cuprum/Cuprum-Italic.svg') format('svg'),
-       url('../fonts/cuprum/Cuprum-Italic.ttf') format('truetype'),
-       url('../fonts/cuprum/Cuprum-Italic.woff') format('woff');
+    url('../fonts/cuprum/Cuprum-Italic.otf') format('otf'),
+    url('../fonts/cuprum/Cuprum-Italic.svg') format('svg'),
+    url('../fonts/cuprum/Cuprum-Italic.ttf') format('truetype'),
+    url('../fonts/cuprum/Cuprum-Italic.woff') format('woff');
 }
 
 @font-face {
@@ -44,10 +44,10 @@
 
   src: url('../fonts/cuprum/Cuprum-BoldItalic.woff2') format('woff2');
   src: url('../fonts/cuprum/Cuprum-BoldItalic.eot') format('embedded-opentype'),
-       url('../fonts/cuprum/Cuprum-BoldItalic.otf') format('otf'),
-       url('../fonts/cuprum/Cuprum-BoldItalic.svg') format('svg'),
-       url('../fonts/cuprum/Cuprum-BoldItalic.ttf') format('truetype'),
-       url('../fonts/cuprum/Cuprum-BoldItalic.woff') format('woff');
+    url('../fonts/cuprum/Cuprum-BoldItalic.otf') format('otf'),
+    url('../fonts/cuprum/Cuprum-BoldItalic.svg') format('svg'),
+    url('../fonts/cuprum/Cuprum-BoldItalic.ttf') format('truetype'),
+    url('../fonts/cuprum/Cuprum-BoldItalic.woff') format('woff');
 }
 
 @font-face {
@@ -57,10 +57,9 @@
 
   src: url('../fonts/ptsans/PTSans.woff2') format('woff2');
   src: url('../fonts/ptsans/PTSans.eot') format('embedded-opentype'),
-       url('../fonts/ptsans/PTSans.otf') format('otf'),
-       url('../fonts/ptsans/PTSans.svg') format('svg'),
-       url('../fonts/ptsans/PTSans.ttf') format('truetype'),
-       url('../fonts/ptsans/PTSans.woff') format('woff');
+    url('../fonts/ptsans/PTSans.otf') format('otf'), url('../fonts/ptsans/PTSans.svg') format('svg'),
+    url('../fonts/ptsans/PTSans.ttf') format('truetype'),
+    url('../fonts/ptsans/PTSans.woff') format('woff');
 }
 
 @font-face {
@@ -70,23 +69,23 @@
 
   src: url('../fonts/ptsans/PTSansBold.woff2') format('woff2');
   src: url('../fonts/ptsans/PTSansBold.eot') format('embedded-opentype'),
-       url('../fonts/ptsans/PTSansBold.otf') format('otf'),
-       url('../fonts/ptsans/PTSansBold.svg') format('svg'),
-       url('../fonts/ptsans/PTSansBold.ttf') format('truetype'),
-       url('../fonts/ptsans/PTSansBold.woff') format('woff');
+    url('../fonts/ptsans/PTSansBold.otf') format('otf'),
+    url('../fonts/ptsans/PTSansBold.svg') format('svg'),
+    url('../fonts/ptsans/PTSansBold.ttf') format('truetype'),
+    url('../fonts/ptsans/PTSansBold.woff') format('woff');
 }
 
 @font-face {
   font-weight: 400;
   font-style: italic;
   font-family: 'PTSans';
-  
+
   src: url('../fonts/ptsans/PTSansItalic.woff2') format('woff2');
   src: url('../fonts/ptsans/PTSansItalic.eot') format('embedded-opentype'),
-  url('../fonts/ptsans/PTSansItalic.otf') format('otf'),
-  url('../fonts/ptsans/PTSansItalic.svg') format('svg'),
-  url('../fonts/ptsans/PTSansItalic.ttf') format('truetype'),
-  url('../fonts/ptsans/PTSansItalic.woff') format('woff');
+    url('../fonts/ptsans/PTSansItalic.otf') format('otf'),
+    url('../fonts/ptsans/PTSansItalic.svg') format('svg'),
+    url('../fonts/ptsans/PTSansItalic.ttf') format('truetype'),
+    url('../fonts/ptsans/PTSansItalic.woff') format('woff');
 }
 
 @font-face {
@@ -96,10 +95,10 @@
 
   src: url('../fonts/ptsans/PTSansBold-italic.woff2') format('woff2');
   src: url('../fonts/ptsans/PTSansBold-italic.eot') format('embedded-opentype'),
-       url('../fonts/ptsans/PTSansBold-italic.otf') format('otf'),
-       url('../fonts/ptsans/PTSansBold-italic.svg') format('svg'),
-       url('../fonts/ptsans/PTSansBold-italic.ttf') format('truetype'),
-       url('../fonts/ptsans/PTSansBold-italic.woff') format('woff');
+    url('../fonts/ptsans/PTSansBold-italic.otf') format('otf'),
+    url('../fonts/ptsans/PTSansBold-italic.svg') format('svg'),
+    url('../fonts/ptsans/PTSansBold-italic.ttf') format('truetype'),
+    url('../fonts/ptsans/PTSansBold-italic.woff') format('woff');
 }
 
 @font-face {
@@ -109,10 +108,10 @@
 
   src: url('../fonts/ptsans-caption/PTSansCaption.woff2') format('woff2');
   src: url('../fonts/ptsans-caption/PTSansCaption.eot') format('embedded-opentype'),
-       url('../fonts/ptsans-caption/PTSansCaption.otf') format('otf'),
-       url('../fonts/ptsans-caption/PTSansCaption.svg') format('svg'),
-       url('../fonts/ptsans-caption/PTSansCaption.ttf') format('truetype'),
-       url('../fonts/ptsans-caption/PTSansCaption.woff') format('woff');
+    url('../fonts/ptsans-caption/PTSansCaption.otf') format('otf'),
+    url('../fonts/ptsans-caption/PTSansCaption.svg') format('svg'),
+    url('../fonts/ptsans-caption/PTSansCaption.ttf') format('truetype'),
+    url('../fonts/ptsans-caption/PTSansCaption.woff') format('woff');
 }
 
 @font-face {
@@ -122,10 +121,10 @@
 
   src: url('../fonts/ptsans-caption/PTSansCaptionBold.woff2') format('woff2');
   src: url('../fonts/ptsans-caption/PTSansCaptionBold.eot') format('embedded-opentype'),
-       url('../fonts/ptsans-caption/PTSansCaptionBold.otf') format('otf'),
-       url('../fonts/ptsans-caption/PTSansCaptionBold.svg') format('svg'),
-       url('../fonts/ptsans-caption/PTSansCaptionBold.ttf') format('truetype'),
-       url('../fonts/ptsans-caption/PTSansCaptionBold.woff') format('woff');
+    url('../fonts/ptsans-caption/PTSansCaptionBold.otf') format('otf'),
+    url('../fonts/ptsans-caption/PTSansCaptionBold.svg') format('svg'),
+    url('../fonts/ptsans-caption/PTSansCaptionBold.ttf') format('truetype'),
+    url('../fonts/ptsans-caption/PTSansCaptionBold.woff') format('woff');
 }
 
 @font-face {
@@ -135,10 +134,10 @@
 
   src: url('../fonts/ptsans-narrow/PTSansNarrow.woff2') format('woff2');
   src: url('../fonts/ptsans-narrow/PTSansNarrow.eot') format('embedded-opentype'),
-       url('../fonts/ptsans-narrow/PTSansNarrow.otf') format('otf'),
-       url('../fonts/ptsans-narrow/PTSansNarrow.svg') format('svg'),
-       url('../fonts/ptsans-narrow/PTSansNarrow.ttf') format('truetype'),
-       url('../fonts/ptsans-narrow/PTSansNarrow.woff') format('woff');
+    url('../fonts/ptsans-narrow/PTSansNarrow.otf') format('otf'),
+    url('../fonts/ptsans-narrow/PTSansNarrow.svg') format('svg'),
+    url('../fonts/ptsans-narrow/PTSansNarrow.ttf') format('truetype'),
+    url('../fonts/ptsans-narrow/PTSansNarrow.woff') format('woff');
 }
 
 @font-face {
@@ -148,9 +147,8 @@
 
   src: url('../fonts/ptsans-narrow/PTSansNarrowBold.woff2') format('woff2');
   src: url('../fonts/ptsans-narrow/PTSansNarrowBold.eot') format('embedded-opentype'),
-       url('../fonts/ptsans-narrow/PTSansNarrowBold.otf') format('otf'),
-       url('../fonts/ptsans-narrow/PTSansNarrowBold.svg') format('svg'),
-       url('../fonts/ptsans-narrow/PTSansNarrowBold.ttf') format('truetype'),
-       url('../fonts/ptsans-narrow/PTSansNarrowBold.woff') format('woff');
+    url('../fonts/ptsans-narrow/PTSansNarrowBold.otf') format('otf'),
+    url('../fonts/ptsans-narrow/PTSansNarrowBold.svg') format('svg'),
+    url('../fonts/ptsans-narrow/PTSansNarrowBold.ttf') format('truetype'),
+    url('../fonts/ptsans-narrow/PTSansNarrowBold.woff') format('woff');
 }
-
